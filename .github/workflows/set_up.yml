@@ -9,5 +9,5 @@ jobs:
     - run: npm install
     - run: npm lint
     - name: run tests
-     run: npm test
+      run: npm test
    
