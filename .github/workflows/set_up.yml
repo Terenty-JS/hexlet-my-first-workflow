@@ -2,16 +2,16 @@ name: hello-world
 on: push
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v2
-      - run: ls -la
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install
-      - run: npm lint
-      - name: run tests
-        run: npm test
-      - name: Hello
-       run: make say-hello
+ build:
+  runs-on: ubuntu-latest
+  steps: 
+   - uses: actions/checkout@v2
+   - run: ls -la
+   - uses: actions/checkout@v2
+   - uses: actions/setup-node@v1
+   - run: npm install
+   - run: npm lint
+   - name: run tests
+     run: npm test
+   - name: Hello
+    run: make say-hello
