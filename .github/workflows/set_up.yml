@@ -9,7 +9,7 @@ jobs:
       with:
         node-version: 18
     - run: make setup
-    - run: make start
+    # - run: make start
     - run: make lint
     - name: run tests
       run: make test
