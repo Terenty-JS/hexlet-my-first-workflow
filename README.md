@@ -4,12 +4,6 @@
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
-## System requirements
-
-* NodeJS >= 18
-* NPM >= 6.x
-* Make
-
 ## Using
 
 ```sh
@@ -28,3 +22,8 @@ make test
 ```sh
 make lint
 ```
+
+- uses: actions/checkout@v2
+      # run – произвольная bash-команда
+      # ls -la выведет содержимое текущего репозитория
+      - run: ls -la
