@@ -3,7 +3,7 @@ on: push
 jobs:
  build:
   runs-on: ubuntu-latest
-   steps: 
+  steps: 
     - name: Hello
     run: make say-hello
     - uses: actions/checkout@v2
