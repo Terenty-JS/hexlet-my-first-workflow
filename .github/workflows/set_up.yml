@@ -3,15 +3,15 @@ on: push
 jobs:
  build:
   runs-on: ubuntu-latest
-  steps: 
-   - name: Hello
-   run: make say-hello
-   - uses: actions/checkout@v2
-   - run: ls -la
-   - uses: actions/checkout@v2
-   - uses: actions/setup-node@v1
-   - run: npm install
-   - run: npm lint
-   - name: run tests
-    run: npm test
+   steps: 
+    - name: Hello
+    run: make say-hello
+    - uses: actions/checkout@v2
+    - run: ls -la
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+    - run: npm install
+    - run: npm lint
+    - name: run tests
+     run: npm test
    
