@@ -1,5 +1,4 @@
-setup:
-	npm install build
+setup: install build
 
 install:
 	npm install
@@ -17,6 +16,3 @@ lint:
 	npx eslint .
 
 .PHONY: build
-
-say-hello:
-	echo "Hello, world!"
