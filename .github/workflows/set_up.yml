@@ -8,6 +8,7 @@ jobs:
     - uses: actions/setup-node@v1    
     - run: make setup
     - run: make install
+    - run: make build
     - run: make lint
     - name: run tests
       run: make test
