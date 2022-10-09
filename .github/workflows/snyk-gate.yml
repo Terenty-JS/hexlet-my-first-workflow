@@ -10,9 +10,8 @@ jobs:
         with:
           node-version: '15.x' 
           cache: 'npm' 
-      - run: make setup
-      - run: make lint
-      - run: make test
+      - run: npm ci
+      - run: npm test
       - name: Run Snyk
         uses: snyk/actions/node@master
         env:
