@@ -1,4 +1,4 @@
-name: hello-world
+name: set_up
 on: push
 jobs:
  build:
@@ -8,6 +8,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
+        npm-version: 6
     - run: make setup
     - run: make start
     - run: make lint
