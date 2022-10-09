@@ -1,15 +1,15 @@
-name: set_up
+name: setup-and-test
 on: push
 jobs:
- build:
-  runs-on: ubuntu-latest
-  steps: 
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        npm-version: 6
-    - run: make setup
-    - name: run tests
-      run: make test
-    - run: make lint
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          cache: npm
+      - run: make setup
+      - run: make test
+      - run: make lint
