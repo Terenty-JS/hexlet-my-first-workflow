@@ -1,4 +1,4 @@
-[![hello-world](https://github.com/Terenty-JS/hexlet-my-first-workflow/actions/workflows/set_up.yml/badge.svg)](https://github.com/Terenty-JS/hexlet-my-first-workflow/actions/workflows/set_up.yml)
+[![setup-and-test](https://github.com/Terenty-JS/hexlet-my-first-workflow/actions/workflows/set_up.yml/badge.svg?event=push)](https://github.com/Terenty-JS/hexlet-my-first-workflow/actions/workflows/set_up.yml)
 
 # Example app for CI Hexlet course
 
