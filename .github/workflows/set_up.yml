@@ -1,18 +1,24 @@
+name: set up
+
 on: push
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - name: Set Node.js 15.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: '15.x' 
-          cache: 'npm' 
-      - run: make setup
-      - run: make lint
-      - run: make test
-      - name: Run Snyk
-        uses: snyk/actions/node@master
-        env:
+      - uses: actions/checkout@v3
+
+      - uses: snyk/actions/node@master
+        env: 
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 16.x
+          cache: 'npm'
+
+      - run: make setup
+      - run: make test
+      - run: make lint
